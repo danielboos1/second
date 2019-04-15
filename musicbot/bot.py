@@ -1230,14 +1230,15 @@ class MusicBot(discord.Client):
         return Response( """ ** 
 1join= Bot joins voice channel
 1play<URL>= plays the provided song
+1playq<URL>= Queues the song provided
 1np= Shows Song's Progress
 1remove= removes a song from the queue
-1skip= Skips The Song
-1pause= Pauses Song
+1skip= skip the current song
+1pause= pauses the current song
 1queue= shows the current queue
 1resume= Resumes Song
-1clear= Removes Queued Songs
-1ls<stream url>= Plays Live Stream
+1clear= Clears Queued Songs
+1ls<stream url>= Play live stream provided
 1stop= stops the current song and clears the queue
 **""")
 			
@@ -1249,7 +1250,7 @@ Bsetname= changes the bots name |
 Bautoplaylist= disables or enables auto playlist |
 Bleave<ID>= Forces The Bot to leave server |**""")
 	
-    async def cmd_pla1y(self, message, player, channel, author, permissions, leftover_args, song_url):
+    async def cmd_playq(self, message, player, channel, author, permissions, leftover_args, song_url):
         """
         {command_prefix}play <song URL> |
         {command_prefix}play <Name of song> |
