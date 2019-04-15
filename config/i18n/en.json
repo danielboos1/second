@@ -74,7 +74,7 @@
     "cmd-skip-dl": "The next song (`%s`) is downloading, please wait. ",
     "cmd-skip-force": "Force skipped **{}**. ",
     "cmd-skip-force-noperms": "You do not have permission to force skip. ",
-    "cmd-skip-reply-skipped-1": "Your skip for **{0}** was acknowledged.{1} ",
+    "cmd-skip-reply-skipped-1": "skipped **{0}** was acknowledged.{1} ",
     "cmd-skip-reply-skipped-2": " Next song coming up! |",
     "cmd-skip-reply-voted-1": "**{0}** Has been skipped \n**{1}** more {2} required to vote to skip this song. ",
     "cmd-skip-reply-voted-2": "person is",
